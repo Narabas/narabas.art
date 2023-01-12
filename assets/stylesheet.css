@@ -1,0 +1,319 @@
+body {
+    font-family: "Lato", Arial, sans-serif;
+    background: #efeeeb;
+    min-height: 100%;
+}
+
+.landing-page {
+    background: url(LANDING-BG.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+
+.white {
+    background-color: #efeeeb;
+    height: 95%;
+}
+
+.intro {
+    background: #efeeeb;
+    padding: 0;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: justify;
+}
+
+
+.container {
+    margin: 2rem;
+}
+
+h1 {
+    font-family: "Oswald", Arial, sans-serif;
+    color: #efeeeb;
+    font-weight: normal;
+    letter-spacing: 0.025em;
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+h1.subheader {
+    color: #7B7A79;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+
+    margin-top: -0.5rem;
+
+}
+
+h2 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.25;
+    display: inline;
+}
+
+.header-box {
+    width: 25%;
+    margin: 8px auto;
+    float: left;
+}
+
+div.content {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+    border: #1d1d1d 5px solid;
+    background: #1d1d1d;
+}
+
+div.content>div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-year {
+    background: #efeeeb;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+    width: 50%;
+    height: 50%;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    color: #1d1d1d;
+}
+
+.circle {
+    height: 40%;
+    width: 20%;
+    border-radius: 5rem 0 0 5rem;
+    background: #efeeeb;
+    float: right;
+    right: 25%;
+    position: absolute;
+    bottom: 5%;
+}
+
+.nav-social {
+    padding: 1.5rem;
+}
+
+.landing-socials {
+    display: table;
+    table-layout: fixed;
+    width: 80%;
+    margin: 0 0 20px 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.landing-socials .nav-social {
+    display: table-cell;
+    padding: 0;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    color: #1d1d1d;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+a:hover {
+    color: #505940;
+}
+
+
+.art-row:after,
+.art-row:before,
+.art-row-padding:after,
+.art-row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.art-row img {
+    margin-bottom: -8px
+}
+
+.art-half {
+    float: left;
+    width: 49.99%
+}
+
+.logo {
+    background: url(/assets/NARABAS_LOGO.svg);
+    background-size: cover;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+
+}
+
+.list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.list-unstyled ul li {
+    display: inline-block;
+
+}
+
+.commission-types {
+    line-height: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.commission-types a {
+    text-decoration: none;
+    color: #747474;
+}
+
+.commission-types .selected {
+    color: #505940;
+    font-weight: bold;
+}
+
+.commissions-label {
+    margin-top: 2.2rem;
+    font: bold 100% "Lato", Verdana, Arial, sans-serif;
+    line-height: 60px !important;
+    display: inline;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.commission-header {
+    background: #505940;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    color: #efeeeb;
+}
+
+.commission-description {
+    padding: 10px 0;
+    line-height: 1.5;
+    margin: 10px auto;
+    text-align: justify;
+    width: 70%;
+    left: 0;
+    right: 0;
+}
+
+.commission-description ul {
+    list-style-type: square;
+}
+
+.commission-info {
+    margin: 0 2rem 0 0;
+}
+
+.sidebar {
+    width: 20%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.art-info {
+    margin-left: 25%;
+}
+
+.divider {
+    display: inline;
+    opacity: 0.5;
+}
+
+#wrapper {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        width: 40%;
+        padding-bottom: 40%;
+        margin: 0 auto;
+    }
+
+    .commissions-label {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .commission-types {
+        width: 100%;
+        text-align: center;
+    }
+
+    .art-info {
+        margin: 5rem 0;
+    }
+
+    .mobile-width {
+        width: 100%;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .commission-header {
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
+    .commission-header .commissions-label {
+        margin: 0;
+    }
+
+    .nav-social {
+        padding: 5%;
+    }
+
+    .commission-info {
+        margin: 0;
+    }
+
+    .landing-page {
+        display: none;
+    }
+
+    .landing-socials {
+        margin: 5% auto;
+        position: relative;
+    }
+}
