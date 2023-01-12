@@ -201,7 +201,7 @@ a:hover {
     margin-top: 2.2rem;
     font: bold 100% "Lato", Verdana, Arial, sans-serif;
     line-height: 60px !important;
-    display: inline;
+    /* display: inline; */
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -212,6 +212,10 @@ a:hover {
     position: relative;
     text-transform: uppercase;
     color: #efeeeb;
+}
+
+.commission-header .commissions-label {
+    display: inline;
 }
 
 .commission-description {
@@ -298,6 +302,7 @@ a:hover {
 
     .commission-header .commissions-label {
         margin: 0;
+        display: inline-block;
     }
 
     .nav-social {
