@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <title>Narabas Artworks</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Narabas Artworks</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
     <link rel="stylesheet" href="/assets/stylesheet.css">
+    <script src="/assets/script.js"></script>
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
@@ -15,64 +19,75 @@
     <script src="https://kit.fontawesome.com/e6d7c874fb.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="container">
+<body>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+    </a>
 
-    <!-- !PAGE CONTENT! -->
-    <div>
+    <!-- MOBILE NAV -->
+    <div class="mobile-menu" id="mobile-menu">
+        <h1><a href="." class="navbrand color--lucent">NARABAS</a></h1>
+        <nav class="nav">
+            <a href="/termsofservice.html">terms of service</a>
+            <a href="/commissiontypes.html">commission types</a>
+            <a href="https://forms.gle/cuYkPCoBzBDRRekU8" rel="external" target="_blank">query form</a>
+            <a href="https://discord.gg/mhMyATg83K" rel="external" target="_blank">discord art server</a>
+        </nav>
+    </div>
+    <!-- / MOBILE NAV -->
 
-        <!-- Header -->
-        <header class="sidebar white">
-            <a href="..">
-                <div class="logo"></div>
-            </a>
+    <main class="landing-content">
+        <!-- LANDING IMAGE -->
+        <div class="landing-image"></div>
 
-            <div class="commissions-label">commissions</div>
-            <ul class="list-unstyled commission-types">
-                <li><a href="./portrait/">portrait</a></li>
-                <li><a href="./symmetrical-icon/">symmetrical icon</a></li>
-                <li><a href="./experimental-illustration/">experimental illustration</a></li>
-                <li><a href="./illustrated-scene/">illustrated scene</a></li>
-                <li><a href="./fullbody/">fullbody</a></li>
-                <li><a href="./bust/">bust</a></li>
-                <li><a href="./custom-design/">custom design</a></li>
-                <li><a href="./expression-portrait/">expression portrait</a></li>
-            </ul>
+        <!-- ABOUT & SOCIALS -->
+        <section class="where-to-find-me">
+            <div class="logo"></div>
 
-            <!-- Social Links -->
-            <div class="landing-socials">
-                <a href="https://www.deviantart.com/narabas" rel="external" target="_blank" class="nav-social"><i
+            <!-- SOCIALS -->
+            <div class="socials">
+                <a href="https://www.deviantart.com/narabas" rel="external" target="_blank"><i
                         class="fa-brands fa-deviantart"></i></a>
-                <a href="https://twitter.com/narabas_" rel="external" target="_blank" class="nav-social"><i
+                <a href="https://twitter.com/narabas_" rel="external" target="_blank"><i
                         class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.instagram.com/narabasartworks" rel="external" target="_blank" class="nav-social"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://narabas.tumblr.com/" rel="external" target="_blank" class="nav-social"><i
+                <a href="https://www.instagram.com/narabasartworks" rel="external" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://narabas.tumblr.com/" rel="external" target="_blank"><i
                         class="fa-brands fa-tumblr"></i></a>
-                <a href="https://www.youtube.com/@narabas" rel="external" target="_blank" class="nav-social"><i
+                <a href="https://www.youtube.com/@narabas" rel="external" target="_blank"><i
                         class="fa-brands fa-youtube"></i></a>
             </div>
-            <!-- / Social Links -->
-        </header>
-        <!-- / Header -->
+            <!-- / SOCIALS -->
 
-        <div class="landing-page">
-            <!--
-            <div class="intro">
-                <img src="assets/SM-ICON_NARL.png" width="20%">
-                <p>I'm a digital illustrator working on animal art... Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Phasellus fringilla elementum odio in imperdiet. Mauris ante risus, lacinia vitae malesuada
-                    nec, mattis a nibh. About.</p>
-                <p>My commissions open once a month and are advertised on my social media, as well as what type of
-                    commissions I'm open to. However, you can email me or contact me on discord for a quote or to ask
-                    any other questions you may have!</p>
-            </div>
+            <div class="break"></div>
 
-        </div> -->
+            <h3 class="color--haze">business inquiries</h3>
+            <div class="break"></div>
+            <h3 class="color--sprout">narabascontact@gmail.com</h3>
+        </section>
 
-        <p style="position:absolute;right:10%;">© Narabas</p>
+        <section class="about-me">
+            I'm a digital illustrator working on animal art... Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Phasellus fringilla elementum odio in imperdiet. Mauris ante risus, lacinia vitae malesuada
+            nec, mattis a nibh.
+            <p>My commissions open about once a month, I advertise when I'm open and what types on my Discord first,
+                then on my other socials. You may email me or contact me on discord for a quote or to ask any other
+                questions that you may have!</p>
+        </section>
+        <!-- / ABOUT & SOCIALS -->
 
-            <!-- End Page Content -->
-        </div>
+        <!-- NAVIGATION -->
+        <nav class="nav">
+            <a href="/termsofservice.html">terms of service</a>
+            <a href="/commissiontypes.html">commission types</a>
+            <a href="https://forms.gle/cuYkPCoBzBDRRekU8" rel="external" target="_blank">query form</a>
+            <a href="https://discord.gg/mhMyATg83K" rel="external" target="_blank">discord art server</a>
+        </nav>
+        <!-- / NAVIGATION -->
+
+        <footer class="footer">ALL CONTENT, INCLUDING IMAGES © NARABAS. ALL RIGHTS RESERVED. <div class="square"></div>
+        </footer>
+    </main>
 
 </body>
 
