@@ -1,47 +1,40 @@
-function commissionType(evt, commissionName) {
+function commissionType( select='portrait' ){
+  // Get all tabs
+  const tabs = document.getElementsByClassName('commission');
+  const btns = document.getElementsByClassName('commissiontab');
 
-  var i, commissiontab;
-  var x = document.getElementsByClassName("commission");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  // Loop tabs and set to hidden
+  for ( const tab of tabs || [] ){
+      tab.setAttribute('hidden','');
   }
-  commissiontab = document.getElementsByClassName("commissiontab");
-  for (i = 0; i < x.length; i++) {
-    commissiontab[i].className = commissiontab[i].className.replace(" selected", "");
+
+  // Loop btns and remove class selected
+  for ( const btn of btns || [] ){
+      btn.classList.remove('selected');
   }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  evt.currentTarget.className += " selected";
+
+  // Add selected class to correct button
+  btns[ `btn-${select}` ].classList.add('selected');
+
+  // Unhide the selected tab
+  tabs[ select ].removeAttribute('hidden');
+
+  // Scroll to the selected tab
+  tabs[ select ].scrollIntoView();
+
   document.getElementById("mobile-menu").className = "mobile-menu";
-
-  if (window.matchMedia("(min-width: 900px)").matches) {
-    document.getElementById(commissionName).style.display = "grid";
-  } else {
-    document.getElementById(commissionName).style.display = "flex";
-  }
 }
 
-/* ---I'm so fucking tired don't talk to me--- */
-function mobilecommissionType(evt, commissionName) {
+window.addEventListener('load', function() {
+  // Parse URL search params
+  const params = new URLSearchParams( location.search );
 
-  var i, commissiontab;
-  var x = document.getElementsByClassName("commission");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  commissiontab = document.getElementsByClassName("mcommissiontab");
-  for (i = 0; i < x.length; i++) {
-    commissiontab[i].className = commissiontab[i].className.replace(" selected", "");
-  }
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  evt.currentTarget.className += " selected";
-  document.getElementById("mobile-menu").className = "mobile-menu";
+  // Get tab from url or set to undefined
+  const tab = params.get('tab') ?? undefined;
 
-  if (window.matchMedia("(min-width: 900px)").matches) {
-    document.getElementById(commissionName).style.display = "grid";
-  } else {
-    document.getElementById(commissionName).style.display = "flex";
-  }
-}
+  // Run command to unhide tab
+  commissionType( tab );
+}, false);
 
 function toggleNav() {
   var x = document.getElementById("mobile-menu");
