@@ -20,9 +20,6 @@
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/e6d7c874fb.js" crossorigin="anonymous"></script>
-    <style>
-
-    </style>
 </head>
 
 <body>
@@ -44,30 +41,28 @@
         <h2><a href="/commissiontypes.html" style="color:#8a9477;text-decoration:none;">COMMISSION TYPES</a></h2>
         <div class="mobile-commission-types">
             <ul>
-                <li><button class="mcommissiontab selected"
-                        onclick="mobilecommissionType(event, 'portrait')">portrait</button>
+                <li><button id="btn-portrait" class="commissiontab"
+                        onclick="commissionType('portrait')">portrait</button></li>
+                <li><button id="btn-symmetrical-icon" class="commissiontab"
+                        onclick="commissionType('symmetrical-icon')">symmetrical icon</button></li>
+                <li><button id="btn-experimental-illustration" class="commissiontab"
+                        onclick="commissionType('experimental-illustration')">experimental illustration</button>
                 </li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'symmetrical-icon')">symmetrical
-                        icon</button></li>
-                <li><button class="mcommissiontab"
-                        onclick="mobilecommissionType(event, 'experimental-illustration')">experimental
-                        illustration</button>
+                <li><button id="btn-illustrated-scene" class="commissiontab"
+                        onclick="commissionType('illustrated-scene')">illustrated scene</button></li>
+                <li><button id="btn-fullbody" class="commissiontab"
+                        onclick="commissionType('fullbody')">fullbody</button></li>
+                <li><button id="btn-bust" class="commissiontab" onclick="commissionType('bust')">bust</button></li>
+                <li><button id="btn-custom-design" class="commissiontab"
+                        onclick="commissionType('custom-design')">custom design</button></li>
+                <li><button id="btn-expression-portrait" class="commissiontab"
+                        onclick="commissionType('expression-portrait')">expression portrait</button></li>
+                <li><button id="btn-pixel" class="commissiontab" onclick="commissionType('pixel')">pixel</button>
                 </li>
-                <li><button class="mcommissiontab"
-                        onclick="mobilecommissionType(event, 'illustrated-scene')">illustrated
-                        scene</button></li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'fullbody')">fullbody</button>
+                <li><button id="btn-reference-sheet" class="commissiontab"
+                        onclick="commissionType('reference-sheet')">reference sheet</button></li>
+                <li><button id="btn-chibi" class="commissiontab" onclick="commissionType('chibi')">chibi</button>
                 </li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'bust')">bust</button></li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'custom-design')">custom
-                        design</button></li>
-                <li><button class="mcommissiontab"
-                        onclick="mobilecommissionType(event, 'expression-portrait')">expression
-                        portrait</button></li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'pixel')">pixel</button></li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'reference-sheet')">reference
-                        sheet</button></li>
-                <li><button class="mcommissiontab" onclick="mobilecommissionType(event, 'chibi')">chibi</button></li>
             </ul>
         </div>
     </div>
@@ -82,26 +77,28 @@
                     <li>
                         <h2 class="color--seedling">COMMISSION TYPES</h2>
                     </li>
-                    <li><button class="commissiontab selected"
-                            onclick="commissionType(event, 'portrait')">portrait</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'symmetrical-icon')">symmetrical
-                            icon</button></li>
-                    <li><button class="commissiontab"
-                            onclick="commissionType(event, 'experimental-illustration')">experimental
-                            illustration</button>
+                    <li><button id="btn-portrait" class="commissiontab"
+                            onclick="commissionType('portrait')">portrait</button></li>
+                    <li><button id="btn-symmetrical-icon" class="commissiontab"
+                            onclick="commissionType('symmetrical-icon')">symmetrical icon</button></li>
+                    <li><button id="btn-experimental-illustration" class="commissiontab"
+                            onclick="commissionType('experimental-illustration')">experimental illustration</button>
                     </li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'illustrated-scene')">illustrated
-                            scene</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'fullbody')">fullbody</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'bust')">bust</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'custom-design')">custom
-                            design</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'expression-portrait')">expression
-                            portrait</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'pixel')">pixel</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'reference-sheet')">reference
-                            sheet</button></li>
-                    <li><button class="commissiontab" onclick="commissionType(event, 'chibi')">chibi</button></li>
+                    <li><button id="btn-illustrated-scene" class="commissiontab"
+                            onclick="commissionType('illustrated-scene')">illustrated scene</button></li>
+                    <li><button id="btn-fullbody" class="commissiontab"
+                            onclick="commissionType('fullbody')">fullbody</button></li>
+                    <li><button id="btn-bust" class="commissiontab" onclick="commissionType('bust')">bust</button></li>
+                    <li><button id="btn-custom-design" class="commissiontab"
+                            onclick="commissionType('custom-design')">custom design</button></li>
+                    <li><button id="btn-expression-portrait" class="commissiontab"
+                            onclick="commissionType('expression-portrait')">expression portrait</button></li>
+                    <li><button id="btn-pixel" class="commissiontab" onclick="commissionType('pixel')">pixel</button>
+                    </li>
+                    <li><button id="btn-reference-sheet" class="commissiontab"
+                            onclick="commissionType('reference-sheet')">reference sheet</button></li>
+                    <li><button id="btn-chibi" class="commissiontab" onclick="commissionType('chibi')">chibi</button>
+                    </li>
                 </ul>
                 <br><br>
                 <!-- NAVIGATION -->
@@ -134,7 +131,7 @@
         <main class="commission-content">
 
             <!-- PORTRAIT -->
-            <div id="portrait" class="commission">
+            <div id="portrait" class="commission" hidden>
                 <div class="commission-info">
                     <h2>PORTRAIT</h2>
                     <p>A detailed portrait of your character or pet. Includes a simple textured background color, with
@@ -167,7 +164,7 @@
             <!-- / PORTRAIT -->
 
             <!-- SYMMETRICAL ICON -->
-            <div id="symmetrical-icon" class="commission" style="display: none;">
+            <div id="symmetrical-icon" class="commission" hidden>
                 <div class="commission-info">
                     <h2>SYMMETRICAL ICON</h2>
                     <p>A symmetrical frontal-view icon of your character's head, with a neutral expression or one
@@ -210,7 +207,7 @@
             <!-- / SYMMETRICAL ICON -->
 
             <!-- EXPERIMENTAL ILLUSTRATION -->
-            <div id="experimental-illustration" class="commission" style="display: none;">
+            <div id="experimental-illustration" class="commission" hidden>
                 <div class="commission-info">
                     <h2>EXPERIMENTAL ILLUSTRATION</h2>
                     <p>A mystery illustration of your character. You provide aesthetic or conceptual prompts as well as
@@ -241,7 +238,7 @@
             <!-- / EXPERIMENTAL ILLUSTRATION -->
 
             <!-- ILLUSTRATED SCENE -->
-            <div id="illustrated-scene" class="commission" style="display: none;">
+            <div id="illustrated-scene" class="commission" hidden>
                 <div class="commission-info">
                     <h2>ILLUSTRATED SCENE</h2>
                     <p>A detailed painting of at least half of your character with a background of your choosing.</p>
@@ -263,7 +260,7 @@
             <!-- / ILLUSTRATED SCENE -->
 
             <!-- FULLBODY -->
-            <div id="fullbody" class="commission" style="display: none;">
+            <div id="fullbody" class="commission" hidden>
                 <div class="commission-info">
                     <h2>FULLBODY</h2>
                     <p>An illustration of your character in full, in a pose of your choosing. If you'd like a style
@@ -328,7 +325,7 @@
             <!-- / FULLBODY -->
 
             <!-- BUST -->
-            <div id="bust" class="commission" style="display: none;">
+            <div id="bust" class="commission" hidden>
                 <div class="commission-info">
                     <h2>BUST</h2>
                     <p>An illustration of your character from the shoulders up, in a pose of your choosing. If you'd
@@ -384,7 +381,7 @@
             <!-- / BUST -->
 
             <!-- CUSTOM DESGIN -->
-            <div id="custom-design" class="commission" style="display: none;">
+            <div id="custom-design" class="commission" hidden>
                 <div class="commission-info">
                     <h2>CUSTOM DESIGN</h2>
                     <p>A custom character designed by me while following parameters given by you.</p>
@@ -392,23 +389,21 @@
                     </p>
                     <p>Painted comes shaded, with your choice of lined or lineless. If not specified then I'll choose
                         whether to preserve the lines or not.</p>
-                    <p>I will work on bases, but unless I already own the base or it is F2U then the price is as listed,
-                        but
-                        if the base is P2U and I don't own it, then you'll have to pay the price of the base in addition
-                        to
-                        the cost of the custom. Feel free to contact me and ask if I own a base or not!</p>
+                    <p>I will work on bases, however with a stipulation regarding whether or not I already own the base.
+                        If I do, or the base is F2U, then the price is as listed; however if the base is P2U and I don't
+                        own it, then you'll be required to pay the price of the base in addition to the cost of the
+                        custom. Feel free to contact me and ask if I own a base or not!</p>
                     <p>Accessories can be added at an additional cost which will be quoted based on their complexity.
                     </p>
                     <p>I will present you with a few different sketches for posing and you will choose the one you like
                         the
                         most. I retain all unused sketches unless otherwise discussed.</p>
-                    <h2>FLAT - $94 USD<br>
-                        PAINTED - $114 USD<br>
+                    <h2>FLAT - $64 USD<br>
+                        PAINTED - $84 USD<br>
                         BASE - $35 USD + BASE</h2>
                 </div>
-                <div style="grid-area:1/3/2/5;"><a href="/assets/examples/PCUSTOM_SILKSTAR.png"
-                        data-lightbox="custom" data-title="Painted Custom"><img
-                            src="/assets/examples/PCUSTOM_SILKSTAR.png" width="80%"
+                <div style="grid-area:1/3/2/5;"><a href="/assets/examples/PCUSTOM_SILKSTAR.png" data-lightbox="custom"
+                        data-title="Painted Custom"><img src="/assets/examples/PCUSTOM_SILKSTAR.png" width="80%"
                             style="display:block;margin-left:auto;margin-right:auto;"></a></div>
                 <div class="symmetrical-busts-grid column">
                     <div class="column-reverse" style="display:flex;margin-bottom:30px;">
@@ -454,7 +449,7 @@
             <!-- / CUSTOM DESGIN -->
 
             <!-- EXPRESSION PORTRAIT -->
-            <div id="expression-portrait" class="commission" style="display: none;">
+            <div id="expression-portrait" class="commission" hidden>
                 <div class="commission-info">
                     <h2>EXPRESSION PORTRAIT</h2>
                     <p>A portrait of your character with a specific, potentially exaggerated, expression, in a style
@@ -476,13 +471,13 @@
             <!-- / EXPRESSION PORTRAIT -->
 
             <!-- PIXEL -->
-            <div id="pixel" class="commission" style="display: none;">
+            <div id="pixel" class="commission" hidden>
                 <div class="commission-info">
                     <h2>PIXEL</h2>
                     <p>A pixel head of your character at 150 x 150 or 150 x 200 for wider features. Other pixel options
                         coming soon!</p>
                     <!-- <p>A pixel of your character, at 50 x 50, 100 x 100, or a size to your specifications that doesn't
-                        exceed 200 pixels in either dimension. I'm happy to discuss other dimensions!</p> -->
+                exceed 200 pixels in either dimension. I'm happy to discuss other dimensions!</p> -->
 
                     <h2>$16 USD<br>
                         <!-- SPRITE - $32 USD -->
@@ -503,7 +498,7 @@
             <!-- / PIXEL -->
 
             <!-- REFERENCE SHEET -->
-            <div id="reference-sheet" class="commission" style="display: none;">
+            <div id="reference-sheet" class="commission" hidden>
                 <div class="commission-info">
                     <h2>REFERENCE SHEET</h2>
                     <p>A reference sheet of your character featuring a Flat Fullbody that displays their design (with
@@ -533,7 +528,7 @@
             <!-- / REFERENCE SHEET -->
 
             <!-- CHIBI -->
-            <div id="chibi" class="commission" style="display: none;">
+            <div id="chibi" class="commission" hidden>
                 <div class="commission-info">
                     <h2>CHIBI</h2>
                     <p>A lined, simple, tiny fullbody of your character with minimal details and important features
@@ -560,7 +555,6 @@
             </footer>
         </main>
     </div>
-
     <script src="/assets/lightbox-plus-jquery.js"></script>
 
 </body>
