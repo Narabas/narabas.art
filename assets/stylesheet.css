@@ -10,6 +10,8 @@
     --haze: #838380;
 }
 
+[hidden] { display: none !important; }
+
 .color--lucent {
     color: var(--lucent);
 }
@@ -169,6 +171,10 @@ li {
         bottom: 90px;
     }
 
+    .where-to-find-me>h3 {
+        font-size: 1.2rem;
+    }
+
     .logo {
         width: 30%;
         padding-bottom: 30%;
@@ -187,7 +193,7 @@ li {
 
     .about-me {
         position: relative;
-        bottom: 45px;
+        bottom: 80px;
     }
 }
 
@@ -234,6 +240,11 @@ li {
     width: 20%;
 }
 
+@media only screen and (max-width:900px) {
+    .tos-nav{
+        display: none;
+    }    
+}
 
 /* ---COMMISSION TYPES--- */
 
@@ -470,7 +481,7 @@ button {
 .mobile-commission-types {
     background: #141414;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 30px;
     flex: 1;
 }
@@ -479,6 +490,20 @@ button {
     border-left: 1px #efeeeb solid;
     display: table;
     margin: 0 auto;
+}
+
+.mobile-commission-types>ul>li{
+    margin: 10px 0;
+}
+
+.mobile-commission-types>ul>li>a {
+    color: var(--lucent);
+    opacity: 0.5;
+    padding: 0;
+    font-size:13.333px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .icon {
